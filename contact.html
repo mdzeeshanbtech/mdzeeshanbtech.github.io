@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="index.js"></script>
+</head>
+<body>
+     <!-- /* ===========================================
+            About Section
+        ======================================= */ -->
+
+        <header class="header">
+            <img src="zeeshan logo.jpg" alt="our main logo" class="logo">
+
+            <nav class="navbar">
+                <ul class="navbar-lists">
+                    <li><a href="/index.html" class="navbar-link home-link">Home</a></li>
+                    <li><a href="about.html" class="navbar-link about-link">About</a></li>
+                    <li><a href="service.html" class="navbar-link service-link">Services</a></li>
+                    <li><a href="portfolio.html" class="navbar-link portfolio-link">Portfolio</a></li>
+                    <li><a href="contact.html" class="navbar-link contact-link">Contact</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <!-- /* ===========================================
+            Contact Section
+        ======================================= */ -->
+
+        <section class="section section-contact">
+            <div class="container">
+                <div class="common-heading">Contact Us</div>
+            </div>
+
+            <!-- /* ===========================================
+            map Section
+        ======================================= */ -->
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14435.25312471229!2d86.92611246977539!3d25.24321320000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f04a9a10f88e05%3A0xe5d315977b8f9815!2sNathnagar%2C%20Bhagalpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1686474246155!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+            <div class="section-contact-main contact-container">
+                <form action="https://formspree.io/f/myyarakw" method="POST">
+                    <div class="grid grid-two-column">
+                        <div>
+                            <label for="username"></label>
+                            <input type="text" name="username" placeholder="name" id="username" autocomplete="off">
+                        </div>
+
+                        <div>
+                            <label for="email"></label>
+                            <input type="text" name="email" placeholder="demo@gmail.com" id="email" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="subject"></label>
+                        <input type="text" name="subject" placeholder="subject" id="subject" autocomplete="off">
+                    </div> 
+
+                    
+                    <div>
+                        <label for="textarea"></label>
+                        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea autocomplete="off">
+                    </div>
+
+                    <div>
+                        <input type="submit" name="sumbit" id="btn" value="Send Message">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        
+</body>
+</html>
