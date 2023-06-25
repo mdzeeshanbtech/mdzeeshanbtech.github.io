@@ -15,6 +15,7 @@ const p_img_elem = document.querySelectorAll(".image-overlay")
 p_btns.addEventListener("click",function(e){
     const p_btn_clicked = e.target;
     // console.log(p_btn_clicked);
+    if(!p_btn_clicked.classList.contains("p-btn")) return;
 
   p_btn.forEach((value) => value.classList.remove("p-btn-active"));
 
@@ -35,11 +36,11 @@ p_btns.addEventListener("click",function(e){
 // swiper js code
 // ======================================= */
 
-var swiper = new Swiper(".mySwiper", {
+new Swiper(".mySwiper", {
   slidesPerView:2,
   spaceBetween: 30,
   autoplay: {
-    delay:1000
+    delay:2500
   },
   pagination: {
     el: ".swiper-pagination",
@@ -143,3 +144,41 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(section_hero);
+
+
+// creating new resoponsive bar slide
+
+const myJsmedia = (widthSize) => {
+  if(widthSize.matches){
+    new Swiper(".mySwiper", {
+      slidesPerView:1,
+      spaceBetween: 30,
+      autoplay: {
+        delay:2500
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  }else{
+    new Swiper(".mySwiper", {
+      slidesPerView:2,
+      spaceBetween: 30,
+      autoplay: {
+        delay:2500
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
+}
+const widthSize = window.matchMedia("(max-width : 780px)");
+
+// call listner function at run time
+
+myJsmedia(widthSize);
+
+widthSize.addEventListener("change",myJsmedia);

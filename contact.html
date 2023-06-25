@@ -1,85 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
     <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-        />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
-        <link rel="stylesheet" href="css/style.css">
-        <script defer src="index.js"></script>
-</head>
-<body>
-     <!-- /* ===========================================
-            About Section
-        ======================================= */ -->
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-        <header class="header">
-            <img src="zeeshan logo.jpg" alt="our main logo" class="logo">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="zeeshan logo.jpg" alt="thapa technical logo" class="logo" />
+      <nav class="navbar">
+        <ul class="navbar-lists">
+          <li>
+            <a class="navbar-link home-link" href="/index.html" id="">Home</a>
+          </li>
+          <li>
+            <a class="navbar-link about-link" href="/about.html">About</a>
+          </li>
+          <li>
+            <a class="navbar-link service-link" href="/service.html"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a class="navbar-link portfolio-link" href="/index.html"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="navbar-link" href="/contact.html" target="_blank"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-            <nav class="navbar">
-                <ul class="navbar-lists">
-                    <li><a href="/index.html" class="navbar-link home-link">Home</a></li>
-                    <li><a href="about.html" class="navbar-link about-link">About</a></li>
-                    <li><a href="service.html" class="navbar-link service-link">Services</a></li>
-                    <li><a href="portfolio.html" class="navbar-link portfolio-link">Portfolio</a></li>
-                    <li><a href="contact.html" class="navbar-link contact-link">Contact</a></li>
-                    
-                </ul>
-            </nav>
-        </header>
-        <!-- /* ===========================================
-            Contact Section
-        ======================================= */ -->
+      <div class="mobile-navbar-btn">
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
 
-        <section class="section section-contact">
-            <div class="container">
-                <div class="common-heading">Contact Us</div>
-            </div>
+        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+      </div>
+    </header>
 
-            <!-- /* ===========================================
-            map Section
-        ======================================= */ -->
+    <!-- ======================================== 
+          Our  Cotnact Us Section   
+    ========================================  -->
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14435.25312471229!2d86.92611246977539!3d25.24321320000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f04a9a10f88e05%3A0xe5d315977b8f9815!2sNathnagar%2C%20Bhagalpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1686474246155!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="section section-contact section--hidden">
+      <div class="container">
+        <h2 class="common-heading">contact us</h2>
+      </div>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14435.25312471229!2d86.92611246977539!3d25.24321320000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f04a9a10f88e05%3A0xe5d315977b8f9815!2sNathnagar%2C%20Bhagalpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1686474246155!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
-            <div class="section-contact-main contact-container">
-                <form action="https://formspree.io/f/myyarakw" method="POST">
-                    <div class="grid grid-two-column">
-                        <div>
-                            <label for="username"></label>
-                            <input type="text" name="username" placeholder="name" id="username" autocomplete="off">
-                        </div>
+      <div class="section-contact-main container">
+        <form action="https://formspree.io/f/xnqwzoro" method="POST">
+          <div class="grid grid-two-col">
+            <input
+              type="text"
+              name="username"
+              id=""
+              required
+              placeholder="Name"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Email"
+              autocomplete="false"
+            />
+          </div>
+          <div>
+            <input type="text" name="subject" placeholder="Subject" />
+          </div>
+          <div>
+            <textarea name="message" id="" placeholder="Message"></textarea>
+          </div>
 
-                        <div>
-                            <label for="email"></label>
-                            <input type="text" name="email" placeholder="demo@gmail.com" id="email" autocomplete="off">
-                        </div>
-                    </div>
+          <div>
+            <input type="submit" value="send message" class="btn" />
+          </div>
+        </form>
+      </div>
+    </section>
 
-                    <div>
-                        <label for="subject"></label>
-                        <input type="text" name="subject" placeholder="subject" id="subject" autocomplete="off">
-                    </div> 
+    <!-- ======================================== 
+          Our footer Section   
+    ========================================  -->
 
-                    
-                    <div>
-                        <label for="textarea"></label>
-                        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea autocomplete="off">
-                    </div>
+    <footer class="section section-footer">
+      <div class="container grid grid-four-column">
+          <div class="f-about">
+              <h3>About</h3>
+              <p>We have tested a number of registry fix and clean utilities and preasent our top 3 list on our site for your convenience. Hope you like it.</p>
+          </div>
+          <!-- links ionicons -->
+          <div class="f-links">
+              <h3>Links</h3>
+              <ul>
+                  <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">home</a></li>
 
-                    <div>
-                        <input type="submit" name="sumbit" id="btn" value="Send Message">
-                    </div>
-                </form>
-            </div>
-        </section>
+                  <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">about</a></li>
 
-        
-</body>
+                  <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">service</a></li>
+
+                  <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">portfolio</a></li>
+
+                  <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">contact</a></li>
+
+              </ul>
+          </div>
+          <!-- end -->
+          <div class="f-services">
+              <h3>Service</h3>
+              <ul>
+                  <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">web design</a></li>
+
+                  <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">web development</a></li>
+
+                  <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Mern Project</a></li>
+
+                  <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Online Classes</a></li>
+
+                  <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Youtube Courses</a></li>
+
+              </ul>
+          </div>
+          <!-- end -->
+          <div class="f-address">
+              <h3>Have a Questions?</h3>
+              <address>
+                  <div>
+                      <p class="ital">
+                          <span><ion-icon name="location-outline"></ion-icon></span>
+                          <a href="3">Bihar,India</a>
+                      </p>
+                  </div>
+
+                  <div>
+                      <p class="ital">
+                          <span><ion-icon name="call-outline"></ion-icon></span>
+                          <a href="tel:+917061585615">+91 7061585615</a>
+                      </p>
+                  </div>
+
+                  <div>
+                      <p class="ital">
+                          <span><ion-icon name="mail-outline"></ion-icon></span>
+                          <a href="mailto:mdzeeshanbtech@gmail.com">mdzeeshanbtech@gmail.com</a>
+                      </p>
+                  </div>
+              </address>
+          </div>
+      </div>
+      <div class="container">
+          <div class="f-social-icons">
+              <a href="https://www.linkedin.com/in/md-zeeshan-81004521a" target="_blank">
+                  <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+              </a>
+
+              <a href="https://github.com/mdzeeshanbtech" target="_blank">
+                  <ion-icon name="logo-github" class="icons"></ion-icon>
+              </a>
+
+              <a href="https://twitter.com/mdzeeshanbtech?t=9TtqCAorfMDdlCJ2IvqbSA&amp;s=08" target="_blank">
+                  <ion-icon name="logo-twitter" class="icons"></ion-icon>
+              </a>
+          </div>
+
+          <div class="f-credits">
+              <p>Copyright ©️2023 All rights reserved | This template is made with ❤️ by Md Zeeshan</p>
+          </div>
+      </div>
+  </footer>
+
+    <!-- ======================================== 
+          Our JavaScript Section   
+    ========================================  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>

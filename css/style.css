@@ -179,9 +179,10 @@ Hero Section Start
 }
 
 .hero-img{
-  max-width: 50%;
-  border-radius: 50%;
+  max-width: 65%;
+  /* border-radius: 10%; */
   z-index: 1;
+
 }
 
 
@@ -758,7 +759,7 @@ Footer Section Start
 .f-links ul , .f-services ul , .f-address address{
   display: flex;
   flex-direction: column;
-  gap:1.8rem;
+  gap:1.2rem;
   justify-content: center;
 }
 
@@ -770,6 +771,10 @@ Footer Section Start
 
 .f-links span, .f-services span , .f-address span{
   margin-right: 1rem;
+}
+
+.section-footer .grid{
+  gap:8rem;
 }
 
 
@@ -816,7 +821,7 @@ Scroll Section Start
   position:fixed;
   right:2%;
   bottom:5%;
-  /* z-index: 1; */
+  z-index: 1;
   
 
 }
@@ -833,25 +838,33 @@ Scroll Section Start
   color:var(--heading);
   animation: water-wave 3s linear infinite;
   cursor: pointer;
+  
   /* left:2%;
   bottom:5%; */
 
 }
 
-/* .scroll-down{
-  width: 4rem;
-  height: 4rem;
-  background: var(--helper);
-  display: inline-block;
-  padding:1.4rem 1.8rem;
-  position: relative;
-  color:var(--heading);
-  animation: water-wave 3s linear infinite;
-  cursor: pointer;
-  /* left:2%;
-  bottom:5%; */
+/* ===========================================
+    sticky navbar
+======================================= */
 
-/* } */ 
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  /* box-shadow: 0 0 2rem 0 rgba(0,0,0.1); */
+  z-index: 1000;
+}
+.sticky .section-hero {
+  margin-top: 10rem;
+}
+
+
 /* ===========================================
     media queries
 ======================================= */
@@ -882,17 +895,6 @@ Scroll Section Start
 }
 
 
-/* 1500px */
-@media (max-width :95em){
-  .container{
-    max-width: 130rem;
-    padding: 0 3.2rem;
-  }
-
-  .navbar-lists {
-    gap: 3.4rem;
-  }
-}
 
 
 
@@ -971,29 +973,167 @@ Scroll Section Start
   .section-hero h1 {
     line-height: 1.05;
   }
-  /* service section */
-  .section-services .grid{
-    gap:100rem;
+
+  picture{
+    text-align: center;
   }
 
-  .grid-three-column {
+  .image-overlay .common-heading {
+    font-size: 3.2rem;
+  }
+
+  .image-overlay .common-heading ::before,
+  .image-overlay .common-heading ::after{
+    contain: "";
+    width: 0;
+    height: 0;
+
+
+  }
+  .image-overlay:hover > .overlay{
+    transform: translateY(0);
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+}
+
+/* 1500px */
+@media (max-width :95em){
+  .container{
+    max-width: 130rem;
+    padding: 0 3.2rem;
+  }
+
+  .navbar-lists {
+    gap: 3.4rem;
+  }
+}
+
+/* 784px */
+
+@media (max-width:49em){
+  .container {
+    max-width: 71rem;
+  }
+
+  .section-hero .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .section-hero .hero-img{
+    max-width: 60%;
+    border-radius: 10%;
+    z-index: 1;
+  }
+
+  .section-hero-data{
+    align-items: center;
+  }
+
+  .hero-para{
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+   /* service section */
+   .section-services .grid{
+    gap:6rem;
+  }
+
+  .section-services .grid-three-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+   /* bio data */
+
+   .section-biodata .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .section-biodata .bio-image {
+    grid-row-start: 2;
+    margin-top: 3.2rem;
+  }
+
+  .section-biodata .bio-image img{
+    width: 50%;
+  }
+
+  /* portfoilio section */
+
+  .section-portfolio .grid-three-column{
     grid-template-columns: repeat(2,1fr);
   }
+ 
+  /* work data */
+
+  .section-work-data .grid-four-column {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .section-footer .grid-four-column {
+    grid-template-columns: repeat(2,1fr);
+    /* place-items: center; */
+  }
+
+  
+
 }
 
-/* sticky navbar */
+/* below 560px */
+@media (max-width : 35em) {
+  .header{
+    padding: 0 3.2rem;
+  }
+  .header .logo{
+    width: 50%;
+  }
 
-.sticky .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 8rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  /* box-shadow: 0 0 2rem 0 rgba(0,0,0.1); */
-  z-index: 1000;
+  .p-btn{
+    gap:2.8rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+  }
+
+  .counter-numbers {
+    font-size: 3.2rem;
+  }
+
+  .section-services .grid-three-column {
+    grid-template-columns: 1fr;
+  }
+
+  /* freelancing  */
+
+  .section-freelancer h2 {
+    font-size: 3em;
+  }
+
+  /* contact section  */
+
+  .contact-container .grid-two-column {
+     grid-template-columns: 1fr;
+  }
+  .contact-container{
+    padding : 0 3.2rem;
+  }
+ 
+  .section-contact #btn{
+    max-width: 60%;
+  }
+
+  /* footer section  */
+  .section-footer .f-about, .section-footer .f-address{
+    grid-column: 1/-1
+  }
+
+  .image-overlay:hover > .overlay{
+    transform: translateY(0);
+    opacity: 0.8;
+    cursor: pointer;
+  }
 }
-.sticky .section-hero {
-  margin-top: 10rem;
-}
+

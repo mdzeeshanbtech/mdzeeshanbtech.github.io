@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="My portfolio website to showcase the work I have done so far, the services I provide and all my professionals life.">
+        <meta name="keywords" content="HTML, CSS, JavaScript, portfolio Website">
+        <meta name="author" content="Md Zeeshan">
         <title>Zeeshan</title>
         <link
         rel="stylesheet"
@@ -14,14 +17,14 @@
         <link rel="stylesheet" href="css/style.css">
         <script defer src="index.js"></script>
      </head>
-     <body >
+     <body>
         <header class="header">
             <img src="zeeshan logo.jpg" alt="our main logo" class="logo">
 
             <nav class="navbar">
-                <ul class="navbar-lists active">
-                    <li><a href="#" class="navbar-link home-link">Home</a></li>
-                    <li><a href="about.html" class="navbar-link about-link">About</a></li>
+                <ul class="navbar-lists">
+                    <li><a href="/index.html" class="navbar-link home-link">Home</a></li>
+                    <li><a href="about1.html" class="navbar-link about-link">About</a></li>
                     <li><a href="service.html" class="navbar-link service-link">Services</a></li>
                     <li><a href="portfolio.html" class="navbar-link portfolio-link">Portfolio</a></li>
                     <li><a href="contact.html" class="navbar-link contact-link">Contact</a></li>
@@ -69,7 +72,12 @@
                     <!-- hero section right side -->
 
                     <div class="section-hero-image" id="sectionImg">
-                        <img src="zeeshan new 1.png"  alt="THS IS HERO IMAGE" class="hero-img" loading="lazy">
+                        <picture>
+                            <source srcset="zeeshan_new1.webp" type="image/webp"/>
+                            <source srcset="zeeshan_new1.jpg" type="image/jpg"/>
+                            <img src="zeeshan_new1.jpg"  alt="THS IS HERO IMAGE" class="hero-img" loading="lazy">
+                        </picture>
+                        
                     </div>
                 </div>
             </section>
@@ -82,7 +90,13 @@
         <section class="section-biodata section">
             <div class="container grid grid-two-column">
                 <div class="bio-image">
-                    <img src="images/biodata.jpg" alt="my bio data image"  loading="lazy" loading="lazy">
+                    <picture>
+                        <source srcset="images/biodata.webp" type="image/webp"/>
+                        <source srcset="images/biodata-compressed.jpg" type="image/jpg"/>
+                        <img src="images/biodata-compressed.jpg" alt="my bio data image">
+                    </picture>
+                    
+                    
                 </div>
             
 
@@ -126,7 +140,7 @@
                         </div>
                     </div>
                     <div class="bio-data-btn">
-                        <a href="#" id="btn">Download CV</a>
+                        <a href="https://drive.google.com/file/d/1NAScSwsvpOJImaaTkgVP2CcjbsHxcJ79/view?usp=drivesdk" id="btn" download target="_blank">Download CV</a>
                     </div>
                 </div>
             </div>
@@ -146,35 +160,56 @@
 
              <div class="container grid grid-three-column portfoli-image">
                 <div class="image-overlay p-btn--1 ">
-                    <img src="images/portfolio-section/1.jpg" alt="my works" loading="lazy"loading="lazy">
+                    <picture>
+                        <source srcset="images/portfolio-section/1.webp" type="image/webp"/>
+                        <source srcset="images/portfolio-section/1.jpg.jpg" type="image/jpg"/>
+                        <img src="images/biodata-compressed.1.jpg" alt="my bio data image"  loading="lazy">
+                    </picture>
+                    
                     <div class="overlay">
                         <a href="#" target="_thapa" class="common-heading">Project 1</a>
                     </div>
                 </div>
 
                 <div class="image-overlay p-btn--3">
-                    <img src="images/portfolio-section/1.jpg" alt="my works"loading="lazy">
+                    <picture>
+                        <source srcset="images/portfolio-section/1.webp" type="image/webp"/>
+                        <source srcset="images/portfolio-section/1.jpg.jpg" type="image/jpg"/>
+                        <img src="images/biodata-compressed.1.jpg" alt="my bio data image"  loading="lazy">
+                    </picture>
                     <div class="overlay">
                         <a href="#" target="_thapa" class="common-heading">Project 2</a>
                     </div>
                 </div>
 
                 <div class="image-overlay p-btn--1">
-                    <img src="images/portfolio-section/1.jpg" alt="my works"loading="lazy">
+                    <picture>
+                        <source srcset="images/portfolio-section/1.webp" type="image/webp"/>
+                        <source srcset="images/portfolio-section/1.jpg.jpg" type="image/jpg"/>
+                        <img src="images/biodata-compressed.1.jpg" alt="my bio data image"  loading="lazy">
+                    </picture>
                     <div class="overlay">
                         <a href="#" target="_thapa" class="common-heading">Project 3</a>
                     </div>
                 </div>
 
                 <div class="image-overlay p-btn--1 p-btn--2 ">
-                    <img src="images/portfolio-section/1.jpg" alt="my works"loading="lazy">
+                    <picture>
+                        <source srcset="images/portfolio-section/1.webp" type="image/webp"/>
+                        <source srcset="images/portfolio-section/1.jpg.jpg" type="image/jpg"/>
+                        <img src="images/biodata-compressed.1.jpg" alt="my bio data image"  loading="lazy">
+                    </picture>
                     <div class="overlay">
                         <a href="#" target="_thapa" class="common-heading">Project 4</a>
                     </div>
                 </div>
 
                 <div class="image-overlay p-btn--2">
-                    <img src="images/portfolio-section/1.jpg" alt="my works"loading="lazy">
+                    <picture>
+                        <source srcset="images/portfolio-section/1.webp" type="image/webp"/>
+                        <source srcset="images/portfolio-section/1.jpg.jpg" type="image/jpg"/>
+                        <img src="images/biodata-compressed.1.jpg" alt="my bio data image"  loading="lazy">
+                    </picture>
                     <div class="overlay">
                         <a href="#" target="_thapa" class="common-heading">Project 5</a>
                     </div>
@@ -182,7 +217,11 @@
 
 
                 <div class="image-overlay p-btn--1">
-                    <img src="images/portfolio-section/1.jpg" alt="my works" loading="lazy">
+                    <picture>
+                        <source srcset="images/portfolio-section/1.webp" type="image/webp"/>
+                        <source srcset="images/portfolio-section/1.jpg.jpg" type="image/jpg"/>
+                        <img src="images/biodata-compressed.1.jpg" alt="my bio data image"  loading="lazy">
+                    </picture>
                     <div class="overlay">
                         <a href="#" target="_thapa" class="common-heading">Project 6</a>
                     </div>
@@ -219,15 +258,15 @@
             Our Services Section Start
         ======================================= */ -->
 
-        <section class="section section-services">
-            <div class="container">+
+        <section class="section section-services" id="grow">
+            <div class="container">
                 <h2 class="common-heading">Services Offers</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis impedit atque obcaecati officiis tenetur expedita voluptatum.</p>
             </div>
 
 
             <!-- services offers card -->
-            <div class="container grid grid-three-column ">
+            <div class="container grid grid-three-column">
                 <div class="service-box">
                     <ion-icon name="desktop-outline" class="service-icon"></ion-icon>
                     <h3>Web Design </h3>
@@ -456,6 +495,9 @@
                 <div class="common-heading">Contact Us</div>
             </div>
 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14435.25312471229!2d86.92611246977539!3d25.24321320000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f04a9a10f88e05%3A0xe5d315977b8f9815!2sNathnagar%2C%20Bhagalpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1686474246155!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
             <div class="section-contact-main contact-container">
                 <form action="https://formspree.io/f/myyarakw" method="POST">
                     <div class="grid grid-two-column">
@@ -478,7 +520,7 @@
                     
                     <div>
                         <label for="textarea"></label>
-                        <textarea name="textarea" id="textarea" cols="30" rows="10"autocomplete = "off" required></textarea>
+                        <textarea name="textarea" id="textarea" cols="30" rows="10"autocomplete = "off" placeholder="write your message" required></textarea>
                     </div>
 
                     <div>
@@ -559,16 +601,16 @@
             </div>
             <div class="container">
                 <div class="f-social-icons">
-                    <a href="#" target="_blank">
-                        <ion-icon name="logo-instagram" class="icons"></ion-icon>
+                    <a href="https://www.linkedin.com/in/md-zeeshan-81004521a" target="_blank">
+                        <ion-icon name="logo-linkedin" class="icons"></ion-icon>
                     </a>
 
-                    <a href="#" target="_blank">
-                        <ion-icon name="logo-discord" class="icons"></ion-icon>
+                    <a href="https://github.com/mdzeeshanbtech" target="_blank">
+                        <ion-icon name="logo-github" class="icons"></ion-icon>
                     </a>
 
-                    <a href="#" target="_blank">
-                        <ion-icon name="logo-youtube" class="icons"></ion-icon>
+                    <a href="https://twitter.com/mdzeeshanbtech?t=9TtqCAorfMDdlCJ2IvqbSA&amp;s=08" target="_blank">
+                        <ion-icon name="logo-twitter" class="icons"></ion-icon>
                     </a>
                 </div>
 
